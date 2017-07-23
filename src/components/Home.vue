@@ -35,7 +35,7 @@
   import axios from 'axios'
   import Recommend from './Common/Recommend.vue'
   import Booklist from './Common/Booklist.vue'
-  import Loading from './Loading/Loading.vue'
+  import Loading from './Loading.vue'
 
   export default{
     data(){
