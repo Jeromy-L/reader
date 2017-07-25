@@ -6,7 +6,7 @@ const superagent = require('superagent')
 require('superagent-charset')(superagent)
 const async = require('async');
 
-const urlList = require('.urls')
+const urlList = require('./urls')
 let num = 1;
 let urlId = num  //第几本书+1
 let url = urlList[urlId - 1]  //url地址
@@ -18,7 +18,7 @@ const pool = mysql.createPool({
   host: 'localhost',
   user: 'root',
   password: '123456',
-  database: 'book2',
+  database: 'book1',
   port: 3306
 })
 
