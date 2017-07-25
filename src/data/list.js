@@ -67,14 +67,14 @@ function fetList(url, callback, id) {
     })
 }
 
-function saveToMysql(results) {
-  results.forEach(function (result) {
-    pool.query('insert into booklist set ?', result, function (err, result1) {
-      if (err) throw err
-      console.log(`insert ${result.id} success`)
-    })
-  })
-}
+// function saveToMysql(results) {
+//   results.forEach(function (result) {
+//     pool.query('insert into booklist set ?', result, function (err, result1) {
+//       if (err) throw err
+//       console.log(`insert ${result.id} success`)
+//     })
+//   })
+// }
 
 app.get('/', function (req, response) {
   async.mapLimit(urls, 5, function (url, callback) {
@@ -82,7 +82,7 @@ app.get('/', function (req, response) {
     fetList(url, callback, id)
   }, function (err, results) {
     response.send(results)
-    saveToMysql(results)
+    //saveToMysql(results)
   })
 })
 
