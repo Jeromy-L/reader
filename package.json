@@ -58,7 +58,14 @@
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.16.1",
-    "webpack-merge": "^2.6.1"
+    "webpack-merge": "^2.6.1",
+    "request": "^2.81.0",
+    "superagent": "^3.5.2",
+    "superagent-charset": "^1.2.0",
+    "async": "^2.5.0",
+    "bufferhelper": "^0.2.1",
+    "cheerio": "^0.22.0",
+    "eventproxy": "^0.3.5"
   },
   "engines": {
     "node": ">= 4.0.0",

@@ -16,7 +16,7 @@
       </div>
     </nav>
     <nav class="home-nav">
-      <router-link class="guide-nav-div" v-for="(item,index) in type" :to="{path:'category',query:{type: item.num}}":key="item.num" @click="openBookCategory(item.num)">
+      <router-link class="guide-nav-div" v-for="(item,index) in type" :to="{path:'category',query:{type: item.num}}" :key="item.num" @click="openBookCategory(item.num)">
         <i class="icon icon-sort"></i>
         <h4 class="guide-nav-h">{{item.word}}</h4>
       </router-link>

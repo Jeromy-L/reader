@@ -14,13 +14,13 @@ let total = 0 //总章节数
 let id = 0 //计数器
 const chapters = 10 //爬取多少章
 
-const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: '123456',
-  database: 'book1',
-  port: 3306
-})
+// const pool = mysql.createPool({
+//   host: 'localhost',
+//   user: 'root',
+//   password: '123456',
+//   database: 'book1',
+//   port: 3306
+// })
 
 //去除前后空格和&nbsp;转义字符
 function trim(str) {
